@@ -11,6 +11,6 @@ class App {
 const app = new App().application;
 
 app.get("/",(req : express.Request , res : express.Response) =>{
-    res.send("v1");
+    res.send("v2");
 })
 app.listen(4000,()=>console.log("start"));
