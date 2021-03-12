@@ -11,6 +11,6 @@ class App {
 const app = new App().application;
 
 app.get("/",(req : express.Request , res : express.Response) =>{
-    res.send("v6");
+    res.send("v7");
 })
 app.listen(4050,()=>console.log("start"));
