@@ -9,9 +9,9 @@ describe('Test!!', () => {
         }
     });
 
-    it('say Hello should return hello', (done) => {
-        if (sayHello() === 'bye') {
-            done();
-        }
-    });
+    // it('say Hello should return hello', (done) => {
+    //     if (sayHello() === 'bye') {
+    //         done();
+    //     }
+    // });
 });

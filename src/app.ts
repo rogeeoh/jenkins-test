@@ -1,16 +1,16 @@
 import express from "express";
 
+const PORT = 3000;
+
 class App {
     public application: express.Application = express();
-
-    // constructor() {
-    //     this.application = express();
-    // }
 }
 
 const app = new App().application;
 
 app.get("/",(req : express.Request , res : express.Response) =>{
-    res.send("v9");
+    res.send("v1");
 })
-app.listen(4050,()=>console.log("start"));
+app.listen(PORT,()=> {
+    console.log(`server starts at ${PORT}`);
+});
