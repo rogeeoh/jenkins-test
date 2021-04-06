@@ -9,7 +9,7 @@ class App {
 const app = new App().application;
 
 app.get("/",(req : express.Request , res : express.Response) =>{
-    res.send("v2");
+    res.send("v3");
 })
 app.listen(PORT,()=> {
     console.log(`server starts at ${PORT}`);
