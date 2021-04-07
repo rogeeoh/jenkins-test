@@ -8,7 +8,7 @@ const sayBye = () => {
 
 const sum = (a, b) => a + b;
 
-describe('Test Sample', () => {
+describe('Test2 Sample', () => {
     it('sayHello should return hello', (done) => {
         if (sayHello() === 'hello') {
             done();
@@ -29,7 +29,7 @@ describe('Test Sample', () => {
 });
 
 
-describe('Test Sample2', () => {
+describe('Test2 Sample2', () => {
     it('sayHello should return hello', (done) => {
         if (sayHello() === 'hello') {
             done();

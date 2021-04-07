@@ -1,16 +1,17 @@
 import express from "express";
+import dotenv from "dotenv";
+import indexRouter from "./router";
+import versionRouter from "./router/version";
 
-const PORT = 3000;
+dotenv.config();
 
-class App {
-    public application: express.Application = express();
-}
+const PORT:Number = parseInt(process.env.PORT!) || 3000;
 
-const app = new App().application;
+const app:express.Application = express();
 
-app.get("/",(req : express.Request , res : express.Response) =>{
-    res.send("v5");
-})
+app.use('/', indexRouter);
+app.use('/version', versionRouter);
+
 app.listen(PORT,()=> {
     console.log(`server starts at ${PORT}`);
 });
