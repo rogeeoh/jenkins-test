@@ -4,7 +4,7 @@ const router:Router = express.Router();
 const version:Number = 5;
 
 router.get('/', (req: Request, res: Response) => {
-    res.send(`<h1>This is version ${version}</h1></br>`);
+    res.send(`<h1>This is version ${version}</h1><br/>`);
 });
 
 export default router;
